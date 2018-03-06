@@ -1,4 +1,4 @@
-# Style Guideline for programming with R Programming Language
+# Good Coding Practices for programming with R Programming Language
 
 The coding practice follows the Google's R Style Guide at: https://google.github.io/styleguide/Rguide.xml
 
