@@ -1,2 +1,2 @@
-# prog_style_guides
-Style Guidelines for Programming with Various Programming Languages
+# coding_practices
+Good Coding Practices with Various Programming Languages
