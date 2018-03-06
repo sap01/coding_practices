@@ -6,4 +6,4 @@ The coding practice follows the Google's R Style Guide at: https://google.github
 single hash is used to comment codes and double hashes are used to comment plain english sentences.
 
 ## Addition:
-For calling a function defined in an external package, use `<\<package name\>::function name(...)>` instead of just '<function name>(...)'.
+For calling a function defined in an external package, use `<package name>::<function name>(...)` instead of just `<function name>(...)`.
