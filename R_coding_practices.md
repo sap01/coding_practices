@@ -16,3 +16,5 @@ for(loop.counter in pos.anchor.matrices) {
 rm(loop.counter)
 ```
 
+Do not depend on the operator precedence and associativity. Always use paired parentheses to manually define the precedence. 
+
