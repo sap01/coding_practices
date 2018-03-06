@@ -13,16 +13,14 @@ left <- (time.pt.idx + num.interm.matrices.per.interval) %/% (num.interm.matrice
 
 
 ## Additions:
-### 1
-For calling a function defined in an external package, use `<package name>::<function name>(...)` instead of just `<function name>(...)`.
+* At any point in the source code, there should not exist any object which is no longer required. As soon as its job is over, remove it.
+* For calling a function defined in an external package, use `<package name>::<function name>(...)` instead of just `<function name>(...)`.
 
-### 2
-In a `for` loop, remove the loop counter object immediately after the end of the loop.
+* In a `for` loop, remove the loop counter object immediately after the end of the loop.
 ```r
 for(loop.counter in pos.anchor.matrices) {
       ## do something
 }
 rm(loop.counter)
 ```
-### 3
-Do not depend on the operator precedence and associativity. Always use paired parentheses to manually define the precedence. 
+* Do not depend on the operator precedence and associativity. Always use paired parentheses to manually define the precedence. 
