@@ -15,7 +15,11 @@ left <- (time.pt.idx + num.interm.matrices.per.interval) %/% (num.interm.matrice
 ## Additions:
 * At any point in the source code, there should not exist any object which is no longer required. As soon as its job is over, remove it.
 * For calling a function defined in an external package, use `<package name>::<function name>(...)` instead of just `<function name>(...)`.
-
+* For calling a function defined in another R script, insert a commented line before the call specifying the relative path to the source script that contains the function definition. 
+```r
+## '<relative path to the currest R script>/add-values.R'
+result <- AddTwoInts(v1, v2)
+```
 * In a `for` loop, remove the loop counter object immediately after the end of the loop.
 ```r
 for(loop.counter in pos.anchor.matrices) {
